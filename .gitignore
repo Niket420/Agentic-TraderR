@@ -1,0 +1,339 @@
+# ============================================================
+# ENVIRONMENT / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+!.env.template
+
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# API keys / credentials
+secrets/
+credentials/
+*.secret
+*.credentials
+
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.so
+
+.Python
+python_env/
+venv/
+env/
+.venv/
+.env/
+
+pip-wheel-metadata/
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+.tox/
+.nox/
+
+.pytype/
+.dmypy.json
+dmypy.json
+
+.ipynb_checkpoints/
+
+# Jupyter
+*.ipynb_checkpoints/
+
+
+# ============================================================
+# NODE / REACT / NEXT.JS
+# ============================================================
+
+node_modules/
+
+.next/
+out/
+dist/
+build/
+
+.turbo/
+.vercel/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+*.tsbuildinfo
+
+
+# ============================================================
+# IDE / EDITORS
+# ============================================================
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.iml
+
+.DS_Store
+
+*.swp
+*.swo
+
+*.code-workspace
+
+
+# ============================================================
+# DATABASE
+# ============================================================
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL local dumps
+*.dump
+*.sql.gz
+
+# Prisma generated artifacts
+prisma/*.db
+prisma/*.db-journal
+
+
+# ============================================================
+# RAW MARKET DATA
+# ============================================================
+
+# Large downloaded NSE/BSE files
+data/raw/
+data/downloads/
+data/market-data/
+data/financial-data/
+
+# Exchange files
+*.csv
+*.zip
+*.gz
+*.7z
+
+# NOTE:
+# If you want to commit small CSV fixtures for tests,
+# store them under tests/fixtures/ instead and explicitly allow them.
+
+
+# ============================================================
+# RAW NEWS / DOCUMENTS
+# ============================================================
+
+data/news/
+data/articles/
+data/documents/
+data/pdfs/
+
+*.pdf
+
+
+# ============================================================
+# AI / LLM / RAG DATA
+# ============================================================
+
+data/embeddings/
+data/vectorstore/
+data/vectors/
+data/chroma/
+data/faiss/
+
+*.faiss
+*.index
+
+# Model files
+models/
+checkpoints/
+weights/
+
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.gguf
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
+logs/
+*.log
+
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+
+# ============================================================
+# TEMPORARY / GENERATED DATA
+# ============================================================
+
+tmp/
+temp/
+.cache/
+.cache-loader/
+
+*.tmp
+*.temp
+
+*.bak
+*.backup
+
+
+# ============================================================
+# DATA PIPELINE OUTPUTS
+# ============================================================
+
+data/processed/
+data/intermediate/
+data/staging/
+data/cache/
+data/exports/
+
+# Generated reports
+reports/generated/
+exports/
+
+
+# ============================================================
+# MACHINE LEARNING / EXPERIMENTS
+# ============================================================
+
+experiments/
+runs/
+wandb/
+mlruns/
+mlartifacts/
+
+.tensorboard/
+tensorboard/
+
+*.pickle
+*.pkl
+
+
+# ============================================================
+# BACKTESTING
+# ============================================================
+
+backtests/results/
+backtests/output/
+
+# Large generated datasets
+backtests/data/
+
+
+# ============================================================
+# OS FILES
+# ============================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# ============================================================
+# LOCAL CONFIGURATION
+# ============================================================
+
+config.local.*
+settings.local.*
+*.local.json
+
+
+# ============================================================
+# DOCKER (IF USED LATER)
+# ============================================================
+
+docker-compose.override.yml
+
+
+# ============================================================
+# SECURITY / CERTIFICATES
+# ============================================================
+
+*.pem
+*.key
+*.csr
+*.crt
+
+
+# ============================================================
+# GENERATED API / OPENAPI OUTPUT
+# ============================================================
+
+openapi.json
+openapi.yaml
+
+
+# ============================================================
+# LOCAL TEST OUTPUT
+# ============================================================
+
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+
+# ============================================================
+# PYTHON TEST / TYPE CHECK OUTPUT
+# ============================================================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# ============================================================
+# LOCAL DEVELOPMENT DATA
+# ============================================================
+
+.local/
+.local-data/
+.dev-data/
