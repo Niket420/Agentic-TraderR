@@ -2,6 +2,7 @@ import { Plug, Settings } from "lucide-react";
 import { NavTabs } from "./NavTabs";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { SystemStatus } from "./SystemStatus";
+import { UserMenu } from "./UserMenu";
 import { useNavStore } from "@/store/navStore";
 import { Button } from "@/components/common/Button";
 
@@ -34,6 +35,7 @@ export function Header() {
         <button className="rounded-[var(--radius-sm)] p-2 text-[var(--color-text-tertiary)] hover:bg-[var(--color-bg-hover)] hover:text-[var(--color-text-primary)] transition-colors">
           <Settings size={15} />
         </button>
+        <UserMenu />
       </div>
     </header>
   );
