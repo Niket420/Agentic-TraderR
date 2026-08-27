@@ -10,11 +10,10 @@ const nodeTypes = { workflowNode: WorkflowNode };
 interface WorkflowGraphProps {
   graph: WorkflowGraphDef;
   nodeStates: Record<string, WorkflowNodeState>;
-  direction: "vertical" | "horizontal";
   height?: number;
 }
 
-export function WorkflowGraph({ graph, nodeStates, direction, height = 620 }: WorkflowGraphProps) {
+export function WorkflowGraph({ graph, nodeStates, height = 340 }: WorkflowGraphProps) {
   const nodes: Node<WorkflowNodeData>[] = useMemo(
     () =>
       graph.nodes.map((n) => {
@@ -23,12 +22,12 @@ export function WorkflowGraph({ graph, nodeStates, direction, height = 620 }: Wo
           id: n.id,
           type: "workflowNode",
           position: { x: n.x, y: n.y },
-          data: { label: n.label, hint: n.hint, status: state.status, detail: state.detail, resultLabel: state.resultLabel, completedAt: state.completedAt, direction },
+          data: { label: n.label, hint: n.hint, status: state.status, detail: state.detail, resultLabel: state.resultLabel, completedAt: state.completedAt, icon: n.icon },
           draggable: false,
           selectable: false,
         };
       }),
-    [graph, nodeStates, direction],
+    [graph, nodeStates],
   );
 
   const edges: Edge[] = useMemo(
@@ -42,7 +41,7 @@ export function WorkflowGraph({ graph, nodeStates, direction, height = 620 }: Wo
           id: e.id,
           source: e.source,
           target: e.target,
-          type: direction === "vertical" ? "smoothstep" : "smoothstep",
+          type: "smoothstep",
           animated: active,
           style: {
             stroke: active ? "var(--color-accent)" : traversed ? "var(--color-border-strong)" : "var(--color-border)",
@@ -50,7 +49,7 @@ export function WorkflowGraph({ graph, nodeStates, direction, height = 620 }: Wo
           },
         };
       }),
-    [graph, nodeStates, direction],
+    [graph, nodeStates],
   );
 
   return (
@@ -60,7 +59,7 @@ export function WorkflowGraph({ graph, nodeStates, direction, height = 620 }: Wo
         edges={edges}
         nodeTypes={nodeTypes}
         fitView
-        fitViewOptions={{ padding: 0.15, maxZoom: 1 }}
+        fitViewOptions={{ padding: 0.18, maxZoom: 1 }}
         proOptions={{ hideAttribution: true }}
         nodesDraggable={false}
         nodesConnectable={false}

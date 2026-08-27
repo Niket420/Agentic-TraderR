@@ -63,7 +63,9 @@ export function MarketIntelligencePage() {
         </div>
       )}
 
-      <WorkflowGraph graph={MARKET_INTELLIGENCE_WORKFLOW} nodeStates={nodes} direction="vertical" height={640} />
+      <div className="overflow-x-auto">
+        <WorkflowGraph graph={MARKET_INTELLIGENCE_WORKFLOW} nodeStates={nodes} height={340} />
+      </div>
 
       <AnimatePresence>
         {bullBearActive && (

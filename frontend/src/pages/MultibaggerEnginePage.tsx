@@ -45,7 +45,7 @@ export function MultibaggerEnginePage() {
       {runStatus === "failed" && error && <ErrorBanner message={error} />}
 
       <div className="overflow-x-auto">
-        <WorkflowGraph graph={MULTIBAGGER_WORKFLOW} nodeStates={nodes} direction="horizontal" height={280} />
+        <WorkflowGraph graph={MULTIBAGGER_WORKFLOW} nodeStates={nodes} height={340} />
       </div>
 
       <AnimatePresence>
