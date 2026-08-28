@@ -1,27 +1,40 @@
 <div align="center">
+<img src="docs/screenshots/banner.png" width="100%" alt="ALPHA // ENGINE — AI-native research terminal" />
+</div>
 
-# ALPHA // ENGINE
+<div align="center">
+
+<br/>
+
+[![React](https://img.shields.io/badge/REACT-19-000000?style=for-the-badge&logo=react&logoColor=white&labelColor=000000)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TYPESCRIPT-STRICT-000000?style=for-the-badge&logo=typescript&logoColor=white&labelColor=000000)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TAILWIND-V4-000000?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=000000)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/VITE-8-000000?style=for-the-badge&logo=vite&logoColor=white&labelColor=000000)](https://vitejs.dev/)
+[![Zustand](https://img.shields.io/badge/STATE-ZUSTAND-000000?style=for-the-badge&labelColor=000000)](https://github.com/pmndrs/zustand)
+[![Status](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-000000?style=for-the-badge&labelColor=000000)]()
+
+<br/>
+<br/>
 
 **An AI-native research terminal for hunting asymmetric opportunities.**
-
+<br/>
 Launch a research run. Watch the agents debate. Inspect the evidence. Judge the thesis yourself.
-
-[![React](https://img.shields.io/badge/React-19-black?logo=react&logoColor=white)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-strict-black?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-black?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-8-black?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Zustand](https://img.shields.io/badge/State-Zustand-black)](https://github.com/pmndrs/zustand)
-[![Status](https://img.shields.io/badge/status-frontend%20in%20active%20dev-black)]()
 
 </div>
 
 <br/>
 
-<p align="center">
-  <img src="docs/screenshots/01-landing.png" width="100%" alt="ALPHA // ENGINE landing page" />
-</p>
+```text
+$ SYSTEM STATUS
+> READY
+> THEME .......... MONO / SIGNAL
+> DATA MODE ...... DEMO (deterministic mock event engine)
+> ENGINES ........ MARKET_INTELLIGENCE · MULTIBAGGER · TESTING_LAB
+```
 
 <br/>
+
+---
 
 ## What this is
 
@@ -39,6 +52,8 @@ backend over REST + WebSockets, with zero component-level rewrites required. Unt
 driven by a deterministic, fully-typed mock event engine so the product is demoable end-to-end today.
 
 <br/>
+
+---
 
 ## Screens
 
@@ -71,6 +86,8 @@ driven by a deterministic, fully-typed mock event engine so the product is demoa
 
 <br/>
 
+---
+
 ## Three engines, one terminal
 
 | Engine | What it does |
@@ -84,6 +101,8 @@ count, and the whole thing streams into a collapsible, filterable **live log con
 exactly like a build pipeline.
 
 <br/>
+
+---
 
 ## Architecture
 
@@ -128,6 +147,8 @@ flowchart LR
 
 <br/>
 
+---
+
 ## Tech stack
 
 | Layer | Choice |
@@ -143,6 +164,8 @@ flowchart LR
 | Lint | oxlint |
 
 <br/>
+
+---
 
 ## Getting started
 
@@ -172,6 +195,8 @@ npm run preview # preview the production build locally
 
 <br/>
 
+---
+
 ## Project structure
 
 ```
@@ -187,6 +212,8 @@ frontend/src/
 
 <br/>
 
+---
+
 ## Roadmap
 
 - [ ] Python backend: REST endpoints matching the `api/` layer's contract 1:1
@@ -198,12 +225,23 @@ frontend/src/
 
 <br/>
 
+---
+
 ## License
 
 No license has been added yet — all rights reserved by default until one is chosen.
 
 <br/>
 
+---
+
 <div align="center">
+
 <sub>Built as a research terminal, not a dashboard. Every screen answers: what is happening right now?</sub>
+
+<br/>
+<br/>
+
+<sub>ALPHA <b>//</b> ENGINE</sub>
+
 </div>
