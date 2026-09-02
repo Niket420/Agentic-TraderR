@@ -1,20 +1,4 @@
 <div align="center">
-<img src="docs/screenshots/banner.png" width="100%" alt="ALPHA // ENGINE — AI-native research terminal" />
-</div>
-
-<div align="center">
-
-<br/>
-
-[![React](https://img.shields.io/badge/REACT-19-000000?style=for-the-badge&logo=react&logoColor=white&labelColor=000000)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TYPESCRIPT-STRICT-000000?style=for-the-badge&logo=typescript&logoColor=white&labelColor=000000)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/TAILWIND-V4-000000?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=000000)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/VITE-8-000000?style=for-the-badge&logo=vite&logoColor=white&labelColor=000000)](https://vitejs.dev/)
-[![Zustand](https://img.shields.io/badge/STATE-ZUSTAND-000000?style=for-the-badge&labelColor=000000)](https://github.com/pmndrs/zustand)
-[![Status](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-000000?style=for-the-badge&labelColor=000000)]()
-
-<br/>
-<br/>
 
 **An AI-native research terminal for hunting asymmetric opportunities.**
 <br/>
@@ -50,39 +34,6 @@ research-desk** theme, both built on the same token set so the whole UI repaints
 This repository currently contains the **complete frontend** — architected from day one to snap onto a real Python
 backend over REST + WebSockets, with zero component-level rewrites required. Until that backend exists, every run is
 driven by a deterministic, fully-typed mock event engine so the product is demoable end-to-end today.
-
-<br/>
-
----
-
-## Screens
-
-<table>
-<tr>
-<td width="50%"><img src="docs/screenshots/04-agent-room.png" alt="Live workflow execution and Agent Room debate" /></td>
-<td width="50%"><img src="docs/screenshots/05-company-detail.png" alt="Company research detail panel" /></td>
-</tr>
-<tr>
-<td align="center"><sub>Live run — horizontal workflow graph + Bull/Bear <b>Agent Room</b></sub></td>
-<td align="center"><sub>Deep research panel — thesis, evidence, comparables, manager verdict</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/07-multibagger-scenario.png" alt="Multibagger Engine scenario analysis" /></td>
-<td width="50%"><img src="docs/screenshots/10-signal-theme.png" alt="SIGNAL white and orange theme" /></td>
-</tr>
-<tr>
-<td align="center"><sub><b>Multibagger Engine</b> — 1×/3×/5×/10× scenario &amp; future value modeling</sub></td>
-<td align="center"><sub>The <b>SIGNAL</b> theme — same system, white ground, orange accent</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/screenshots/08-testing-lab.png" alt="Testing Lab performance tracking" /></td>
-<td width="50%"><img src="docs/screenshots/09-integrations.png" alt="API and Integrations credential manager" /></td>
-</tr>
-<tr>
-<td align="center"><sub><b>Testing Lab</b> — track your own calls, see what actually happened</sub></td>
-<td align="center"><sub>Bring-your-own-keys, masked after save, never persisted in the browser</sub></td>
-</tr>
-</table>
 
 <br/>
 
